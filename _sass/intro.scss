@@ -2,8 +2,8 @@
     margin: 0;
     text-align: center;
     text-align: -webkit-center;
-    background: #272727;
-    color: #f7f8f8;
+    background: var(--background-color);
+    color: var(--text-color);
     font-size: 1em;
     padding:1rem;
     font-family: "Arial";
@@ -12,7 +12,7 @@
 #myname {
     font-size: 1.1em;
     font-weight: bold;
-    color: #f4c443;
+    color: var(--link-color);
 }
 
 #slogan {
@@ -26,22 +26,4 @@
     max-height: 15em;
     border-radius: 50%;
     object-fit: cover;
-}
-
-@media screen and (min-width: 30em){
-    body {
-        font-size: 1.5rem;
-    }
-}
-
-@media screen and (min-width: 50em){
-    body {
-        font-size: 1.7rem;
-    }
-}
-
-@media screen and (min-width: 130em){
-    body {
-        font-size: 1.9rem;
-    }
 }

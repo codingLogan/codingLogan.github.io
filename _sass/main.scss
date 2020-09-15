@@ -1,11 +1,15 @@
+:root {
+  --link-color: #f4c443;
+  --background-color: #272727;
+  --text-color: #f7f8f8;
+}
+
 body {
   margin: 0;
-  text-align: center;
-  text-align: -webkit-center;
-  background: #272727;
-  color: #f7f8f8;
+  background: var(--background-color);
+  color: var(--text-color);
   font-size: 1.2rem;
-  padding:1rem;
+  padding: 1rem;
   font-family: "Arial";
 }
 
@@ -16,4 +20,26 @@ ul {
 
 #content {
   max-width: 75em;
+}
+
+a:link, a:visited {
+  color: var(--link-color);
+}
+
+@media screen and (min-width: 30em){
+  body {
+      font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 50em){
+  body {
+      font-size: 1.7rem;
+  }
+}
+
+@media screen and (min-width: 130em){
+  body {
+      font-size: 1.9rem;
+  }
 }
