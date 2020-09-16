@@ -1,4 +1,4 @@
-nav a {
+nav a:link, nav a:visited {
     background-color: var(--link-color);
     color: black;
     padding: 8px;
