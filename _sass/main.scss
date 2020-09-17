@@ -1,3 +1,47 @@
-#header nav {
-  background-color: transparent;
+:root {
+  --link-color: #f4c443;
+  --background-color: #272727;
+  --text-color: #f7f8f8;
+}
+
+body {
+  margin: 0;
+  background: var(--background-color);
+  color: var(--text-color);
+  font-size: 1.2rem;
+  padding: 1rem;
+  font-family: "Arial";
+  max-width: 45em;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0
+}
+
+#content {
+  max-width: 75em;
+}
+
+a:link, a:visited {
+  color: var(--link-color);
+}
+
+@media screen and (min-width: 30em){
+  body {
+      font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 50em){
+  body {
+      font-size: 1.7rem;
+  }
+}
+
+@media screen and (min-width: 130em){
+  body {
+      font-size: 1.9rem;
+  }
 }
