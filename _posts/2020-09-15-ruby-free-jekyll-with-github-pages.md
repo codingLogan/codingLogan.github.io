@@ -8,15 +8,15 @@ _So... wait.  Jekyll is powered by Ruby right?  What could you possibly mean by 
 
 Ok ok, you've got me there.  I want to go over a few reason why I've chosen to start using jekyll, and what I mean by _Ruby free_.
 
-_Spoiler - it's not actyally Ruby free, but it feels that way, and I like it :D_
+_Spoiler - it's not actually Ruby free, but it feels that way, and I like it :D_
 
 ## My Current Problem
 
-Over the course of my development career I've learned to solve unique problems, build web pages, write performant SQL, design databases, migrate data from servers to `the cloud`, review code, write documents, manage build proceses, and more...
+Over the course of my development career I've learned to solve unique problems, build web pages, write performant SQL, design databases, migrate data from servers to `the cloud`, review code, write documents, manage build processes, and more...
 
 But there is one major problem I'm sitting face to face with.  I need a place where I can re-invest what I've learned `back into the development community`.  It is time to build a home where I can share my development experiences with you, so jekyll, the lucky dog, will be my first attempt at `maintaining a blog`.
 
-A well written blog post can be a life-saver, so lets dive in about how to start up a site/blog with GitHub Pages and jekyll.
+A well written blog post can be a life-saver, so let's dive in about how to start up a site/blog with GitHub Pages and jekyll.
 
 ## Goals
 
