@@ -2,4 +2,15 @@ nav a:link, nav a:visited {
     background-color: var(--link-color);
     color: black;
     padding: 8px;
+    text-decoration: none;
+}
+
+nav a {
+    transition: background-color .7s, border-radius .7s;
+}
+
+nav a:hover {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 8px black;
 }
