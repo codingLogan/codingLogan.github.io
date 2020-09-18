@@ -3,7 +3,7 @@
 }
 
 #header nav a {
-    transition: box-shadow .7s;
+    transition: color .7s;
     text-decoration: none;
 }
 
@@ -13,6 +13,5 @@
 }
 
 #header nav a:hover {
-    box-shadow: 0 0 8px black;
-    text-decoration: overline;
+    color: var(--link-color);
 }
