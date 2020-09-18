@@ -1,16 +1,18 @@
-nav a:link, nav a:visited {
-    background-color: var(--link-color);
-    color: black;
+#header nav {
+    text-align: center;
+}
+
+#header nav a:link, nav a:visited {
+    color: var(--text-color);
     padding: 8px;
     text-decoration: none;
 }
 
-nav a {
-    transition: background-color .7s, border-radius .7s;
+#header nav a {
+    transition: text-decoration .7s;
 }
 
-nav a:hover {
-    background-color: white;
-    border-radius: 8px;
+#header nav a:hover {
     box-shadow: 0 0 8px black;
+    text-decoration: overline;
 }
