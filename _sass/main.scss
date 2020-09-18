@@ -55,3 +55,10 @@ a:link, a:visited {
       font-size: 1.7rem;
   }
 }
+
+// About 3500px
+@media screen and (min-width: 218em){
+  body {
+      font-size: 2.4rem;
+  }
+}
