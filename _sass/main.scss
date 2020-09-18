@@ -11,7 +11,7 @@ body {
   font-size: 1.2rem;
   padding: 1rem;
   font-family: "Arial";
-  max-width: 45em;
+  max-width: 40em;
   margin: auto;
 }
 
@@ -28,20 +28,30 @@ a:link, a:visited {
   color: var(--link-color);
 }
 
-@media screen and (min-width: 30em){
+// About 600px (default of 16px font)
+@media screen and (min-width: 37em){
   body {
-      font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 }
 
-@media screen and (min-width: 50em){
+// About 900px (default of 16px font)
+@media screen and (min-width: 56em){
   body {
-      font-size: 1.7rem;
+    font-size: 1.6rem;
   }
 }
 
-@media screen and (min-width: 130em){
+// About 1200px (default of 16px font)
+@media screen and (min-width: 75em){
   body {
-      font-size: 1.9rem;
+    font-size: 1.8rem;
+  }
+}
+
+// About 1800px (default of 16px font)
+@media screen and (min-width: 112em){
+  body {
+      font-size: 2rem;
   }
 }
