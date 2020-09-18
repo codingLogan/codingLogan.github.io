@@ -28,30 +28,30 @@ a:link, a:visited {
   color: var(--link-color);
 }
 
-// About 600px (default of 16px font)
-@media screen and (min-width: 37em){
+// sm 600px
+@media screen and (min-width: 600px){
+  body {
+    font-size: 1.3rem;
+  }
+}
+
+// md 900px
+@media screen and (min-width: 900px){
   body {
     font-size: 1.4rem;
   }
 }
 
-// About 900px (default of 16px font)
-@media screen and (min-width: 56em){
+// lg 1200px
+@media screen and (min-width: 1200px){
   body {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 }
 
-// About 1200px (default of 16px font)
-@media screen and (min-width: 75em){
+// xl 1800px
+@media screen and (min-width: 1800px){
   body {
-    font-size: 1.8rem;
-  }
-}
-
-// About 1800px (default of 16px font)
-@media screen and (min-width: 112em){
-  body {
-      font-size: 2rem;
+      font-size: 1.7rem;
   }
 }
