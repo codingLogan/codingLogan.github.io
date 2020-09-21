@@ -1,5 +1,6 @@
 #header nav {
     text-align: center;
+    padding: 1em;
 }
 
 #header nav a {
@@ -14,4 +15,8 @@
 
 #header nav a:hover {
     color: var(--link-color);
+}
+
+#header hr {
+    margin-top: 0;
 }
