@@ -4,24 +4,28 @@
   --text-color: #f7f8f8;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
   background: var(--background-color);
   color: var(--text-color);
   font-size: 1.2rem;
-  padding: 1rem;
   font-family: "Arial";
+  height: 100%;
+}
+
+.body--content {
   max-width: 40em;
+  padding: 1rem;
   margin: auto;
 }
 
 ul {
   list-style: none;
   padding: 0
-}
-
-#content {
-  max-width: 75em;
 }
 
 a:link, a:visited {
