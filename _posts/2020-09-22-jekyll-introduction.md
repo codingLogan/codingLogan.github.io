@@ -1,5 +1,4 @@
 ---
-title: Jekyll Introduction
 ---
 
 Alright, it is time to get in and get technical with jekyll in a new repository.  By the end of this short _How To_ post you should have a very minimal jekyll site up and running.
