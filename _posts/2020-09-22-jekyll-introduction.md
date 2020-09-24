@@ -3,7 +3,7 @@
 
 Alright, it is time to get in and get technical with jekyll in a new repository.  By the end of this short _How To_ post you should have a very minimal jekyll site up and running.
 
-If you want to learn more about jekyll, check out their site at https://jekyllrb.com/.
+If you want to learn more about jekyll, check out their site at [jekyllrb.com](https://jekyllrb.com/).
 
 Before we start, here are some benefits of using jekyll with GitHub Pages
 - No Server back-end
