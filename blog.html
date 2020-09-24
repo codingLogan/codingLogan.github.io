@@ -8,9 +8,10 @@ title: Blog
   <ul class="blog--list">
     {% for post in site.posts %}
     <li>
-      <h3 class="blog--title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      <h4 class="blog--title"><a href="{{ post.url }}">{{ post.title }}</a></h4>
       <h4 class="blog--date">{{ post.date | date_to_string }}</h4>
       {{ post.excerpt }}
+      <hr>
     </li>
     {% endfor %}
   </ul>
