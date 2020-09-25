@@ -4,14 +4,17 @@
     background: var(--background-color);
     color: var(--text-color);
     font-size: 1em;
-    padding:1rem;
     font-family: "Arial";
+}
+
+#hello p {
+    font-size: 1.3em;
 }
 
 #myname {
     font-size: 1.1em;
     font-weight: bold;
-    color: var(--link-color);
+    color: var(--heading-color);
 }
 
 #slogan {
