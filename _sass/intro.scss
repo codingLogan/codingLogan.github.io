@@ -7,8 +7,9 @@
     font-family: "Arial";
 }
 
-#hello p {
-    font-size: 1.3em;
+#hello > p {
+    font-size: 1.1em;
+    font-weight: bold;
 }
 
 #myname {
