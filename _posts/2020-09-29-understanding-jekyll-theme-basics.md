@@ -44,6 +44,6 @@ Here's the basic idea of how to use layouts
     ---
     <p>Some neat paragraph</p>
     ```
-1. Now that Some neat paragraph will show up where you defined _{{ content }}_ in your layout, in this case __layouts/default.html_.
+1. Now that Some neat paragraph will show up where you defined the _content variable_ in your layout, in this case __layouts/default.html_.
 
 Layouts are a great way to create reusable components of your site.
