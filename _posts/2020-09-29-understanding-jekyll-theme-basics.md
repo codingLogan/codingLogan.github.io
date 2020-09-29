@@ -1,7 +1,7 @@
 ---
 ---
 
-A quick summary of what I went over last time.  We ran through a very fast tutorial of setting up a jekyll website on GitHub Pages in about 10m or so.  Now, maybe like me, you have that urge to start customizing it at least a little.  Bare minimum, I like to at least teak the website to have colors of my choosing.
+A quick summary of what I went over last time.  We ran through a very fast tutorial of setting up a jekyll website on GitHub Pages in about 10m or so.  Now, maybe like me, you have that urge to start customizing it at least a little.  Bare minimum, I like to at least tweak the website to have colors of my choosing.
 
 This post will give you the very basics of creating small customizations that will help you make the site feel more like yours, and less like the trailblazers before you.  After all, you probably want to stand out at least a little from the crowd right... right?!
 
@@ -36,7 +36,7 @@ Common layouts are
 
 Here's the basic idea of how to use layouts
 1. You create an HTML file in __layouts_
-1. In the HTML file, add a special `{{content}}` variable that _where you want the child page to be inserted_.  Thsi will make sense in a moment...
+1. In the HTML file, add a special _content variable where you want the child page to be inserted_.  Thsi will make sense in a moment...
 1. Create an html page that uses the layout by telling jekyll you want to use it.  This is done by adding something called _Front Matter_ to the very top of your HTML page:
     ```
     ---
