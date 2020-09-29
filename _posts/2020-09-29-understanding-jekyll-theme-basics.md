@@ -15,7 +15,7 @@ Here's a little more concrete example.  On the [Cayman GitHub](https://github.co
 The basic idea for Cayman or any other theme; check the README of the theme you choose and it should help you know how to customize it.  It might be different in some cases.  (_hallelujah for good documentation!_  Imagine if documentation wasn't written well, or written at all... I'm getting side-tracked, let's move on...)
 
 Here's the directions given straight as they are on the Cayman README:
-___
+
 1. Create a file called /assets/css/style.scss in your site
 1. Add the following content to the top of the file, exactly as shown:
     ```
@@ -27,7 +27,7 @@ ___
 Add any custom CSS (or Sass, including imports) you'd like immediately after the @import line
 
 Note: If you'd like to change the theme's Sass variables, you must set new values before the @import line in your stylesheet.
-___
+
 That's about it for colors.  _Check the README, and create your style_
 
 &nbsp;
