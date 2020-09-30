@@ -2,6 +2,8 @@ A quick summary of what I went over last time.  We ran through a very fast tutor
 
 This post will give you the very basics of creating small customizations that will help you make the site feel more like yours, and less like the trailblazers before you.  After all, you probably want to stand out at least a little from the crowd right... right?!
 
+This post is just scratching the surface of themes, and I'm stil learning as I go, as I find the need.  For more info on themes see [jekyll's website](https://jekyllrb.com/docs/themes/) :D.
+
 &nbsp;
 ## Styles & Colors
 
