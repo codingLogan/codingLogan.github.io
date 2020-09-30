@@ -33,8 +33,12 @@ Common layouts are
 
 Here's the basic idea of how to create and use layouts
 1. You create an HTML file in `_layouts`
-1. In that HTML file, add a special _{{content}}_ variable where you want the child page to be inserted.  This will make sense in a moment...
-1. Create an html page that uses the layout by telling jekyll you want to use it.  This is done by adding something called _Front Matter_ to the very top of your HTML page and signify which layout you want your page to use, see the tripple dashes:
+1. In that HTML file, add a special _content_ variable where you want the child page to be inserted.  For example, lets create a foo.html layout:
+    ```
+    <p>Some Foo for you</p>
+    {% raw %}{{ content }}{% endraw %}
+    ```
+1. Create an html page that uses the layout you just created by telling jekyll you want to use it.  This is done by adding something called _Front Matter_ to the very top of your HTML page and signify which layout you want your page to use, see the tripple dashes:
     ```
     ---
     layout: default
