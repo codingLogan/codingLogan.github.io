@@ -8,3 +8,6 @@ defaults:
       path: ""
     values:
       layout: "default"
+collections:
+  tags:
+    output: true
