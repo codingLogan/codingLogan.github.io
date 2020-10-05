@@ -1,23 +1,17 @@
 ---
-layout: default
-title: Blog
+name: jekyll
 ---
-<h1>Latest Posts</h1>
-
-<section class="tags">
-  <span>Tags:</span>
-  {% for tag in site.tags %}
-    <a href="{{tag.url}}" class="post--tag">{{ tag.name }}</a>
-  {% endfor %}
-</section>
+<h1>Posts tagged with "{{page.name}}"</h1>
 
 <ul class="blog--list">
   {% for post in site.posts %}
+  {% if post.tags contains page.name %}
   <li>
     <h4 class="blog--title"><a href="{{ post.url }}">{{ post.title }}</a></h4>
     <h4 class="blog--date">{{ post.date | date_to_string }}</h4>
     {{ post.excerpt }}
     <hr>
   </li>
+  {% endif %}
   {% endfor %}
 </ul>

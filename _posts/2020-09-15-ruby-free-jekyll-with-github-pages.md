@@ -1,5 +1,7 @@
 ---
+tags: jekyll
 ---
+
 If you've actually looked into using jekyll for a website, I know what you might be thinking...  So... wait.  Jekyll is _powered by Ruby_ right?  What could you possibly mean by a _Ruby free jekyll_?  How would something like that even be viable, and why would you even want that?
 
 Ok ok, you've got me there.  I want to go over a few reason why I've chosen to start using jekyll, and what I mean by _Ruby free_.
