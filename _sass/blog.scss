@@ -12,3 +12,16 @@
     margin-bottom: 0.8em;
     color: var(--text-color);
 }
+
+div.language-plaintext {
+    color: var(--background-color);
+    background-color: var(--text-color);
+}
+
+a.post--tag {
+    background-color: var(--text-color);
+    color: var(--background-color);
+    padding: 4px 12px;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
