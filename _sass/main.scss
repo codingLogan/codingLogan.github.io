@@ -27,14 +27,14 @@ em {
   color: var(--md-code-color);
 }
 
-code.language-plaintext {
-  color: var(--md-code-color);
-}
-
 .body--content {
   max-width: 35em;
   padding: 1rem;
   margin: auto;
+}
+
+a {
+  text-decoration: none;
 }
 
 a:link, a:visited {
