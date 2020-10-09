@@ -18,7 +18,7 @@
 }
 
 #header nav a:hover {
-    text-decoration: underline;
+    border-bottom: 2px solid var(--text-color);
 }
 
 #header hr {
@@ -32,5 +32,5 @@
 }
 
 .nav_item--current {
-    border-bottom: 2px solid;
+    border-bottom: 2px solid var(--text-color);
 }
