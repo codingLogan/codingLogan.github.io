@@ -13,7 +13,8 @@
 
 #header nav a:link, nav a:visited {
     color: var(--text-color);
-    padding-right: 16px;
+    margin-right: 16px;
+    padding-bottom: 4px;
 }
 
 #header nav a:hover {
@@ -28,4 +29,8 @@
     // background-image: linear-gradient(to bottom right, #6290c9FF, #6290c900)
     // background-image: linear-gradient(to bottom right, #6290c9FF, #6290c933, #6290c900);
     background-image: linear-gradient(173deg, #6290c9FF, #6290c933, #6290c900);
+}
+
+.nav_item--current {
+    border-bottom: 2px solid;
 }
