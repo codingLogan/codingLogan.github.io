@@ -1,15 +1,13 @@
 #hello {
-    text-align: center;
-    text-align: -webkit-center;
-    background: var(--background-color);
+    text-align: left;
+    text-align: -webkit-left;
     color: var(--text-color);
-    font-size: 1em;
+    font-size: 1.2em;
     font-family: "Arial";
-}
 
-#hello > p {
-    font-size: 1.1em;
-    font-weight: bold;
+    & > #slogan {
+        margin-top: 4em;
+    }
 }
 
 #myname {
@@ -19,14 +17,5 @@
 }
 
 #slogan {
-    max-width: 15em;
-}
-
-#profile-picture {
-    width: 50vw;
-    height: 50vw;
-    max-width: 15em;
-    max-height: 15em;
-    border-radius: 50%;
-    object-fit: cover;
+    max-width: 13em;
 }

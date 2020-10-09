@@ -19,6 +19,21 @@ body {
   height: 100%;
 }
 
+.hero_image {
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.hero_image--profile {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/HeroImage1440.jpg);
+}
+
+.hero_greeting {
+  font-size: 4em;
+}
+
 h1, h2, h3, h4, h5, h6 {
   color: var(--heading-color);
 }
