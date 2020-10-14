@@ -16,7 +16,7 @@ All of these features of JavaScript help you write more concise code.  I'll go o
 ### Object Spreading
 
 You can use the special triple-dot "..." operator to spread _object properties as arguments_ into a function call or other piece of code.
-```
+```js
 // Assume we have diabloReference(stay: string, and: string)
 // Let's set up an object for an example
 const deckardCain = {stay: "awhile", and: "listen" }
@@ -29,7 +29,7 @@ diabloReference(...deckardDain)
 ```
 
 You can also use the spread operator to _combine_, and _override props_ of another object
-```
+```js
 const firstTry = {hero: "batman", color: "black"}
 // Note, the order matters, the last value for a prop wins
 const secondTry = {
@@ -54,7 +54,7 @@ console.log(thirdTry)
 ### Object Destructuring
 
 This is super helpful for _quick variable assignment_.  Have you ever written code like this?  (note this is a bad example... but it still shows the power of what you can do :D)
-```
+```js
 const mario = getMario()
 const hat = mario.hat
 const power = mario.power
@@ -62,7 +62,7 @@ const power = mario.power
 ```
 
 With destructuring you can do this instead
-```
+```js
 const {hat, power} = getMario();
 ```
 
@@ -72,7 +72,7 @@ See the power there?  All assignment done in one line, and it _reads really clea
 ### Object Rest Parameter
 
 I have to admit, I'm not as familiar with the _rest operator_, but here's one way to use it, which I ran in to while working on a piece of open source code.
-```
+```js
 // Assume an object with a structure like this
 const mario = {
     hat: "cappy",
