@@ -22,10 +22,10 @@ You can use the special triple-dot "..." operator to spread _object properties a
 const deckardCain = {stay: "awhile", and: "listen" }
 
 // You could pass them like this
-diabloReference(deckardDain.stay, deckardCain.and)
+diabloReference(deckardCain.stay, deckardCain.and)
 
 // or you can use spread operator
-diabloReference(...deckardDain)
+diabloReference(...deckardCain)
 ```
 
 You can also use the spread operator to _combine_, and _override props_ of another object
