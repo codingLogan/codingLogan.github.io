@@ -1,0 +1,71 @@
+// .projects {
+//     display: grid;
+//     grid-template-columns: 1fr;
+// }
+
+// @media screen and (min-width: 900px){
+//     .projects {
+//         grid-template-columns: 1fr 1fr;
+//     }
+// }
+
+// Posiitoning of the card for project page
+.projects > div.project--card {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 1em;
+    max-width: 20em;
+}
+
+// General style for card
+.project--card {
+    background-color: var(--text-color);
+    color: var(--background-color);
+    display: grid;
+}
+
+// Positioning for card components
+// title
+// description 2/3
+// tech 1/3
+
+// Sizing and position of title
+.project--card > .project--title {
+    // height: 5em;
+    // line-height: 5em;
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+// List of tech used in a project
+.project--card > .project--description {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.project--description {
+    padding: 0em 1em 1em 1em;
+}
+
+.project--tech {
+    padding: 0em 1em 1em 1em;
+    background-color: #fff8dc;
+
+    ul, ol {
+        list-style: none;
+        padding: 0;
+    }
+}
+
+.project--title {
+    background-size: cover;
+    background-position: center;
+    margin: 0em;
+    padding: 1em;
+    text-shadow: 0 0 24px var(--link-color);
+}
+
+#dungeon-keys {
+    background-image: url("/images/Keys720.png");
+}
