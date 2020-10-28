@@ -62,9 +62,9 @@ d6c3950d96303f4a9b94edf1e167fe91d563242d
 ```
 
 ## The git-bisect Process
-1. Start the process using `git bisect start`
-1. Specify a known bad commit. Here's I'm going to say that my currently checked out commit is _bad_ using `git bisect bad`
-1. Specify a known good commit.  From my list above I'm going to say that the good commit was some time ago using `git bisect good 211cd00af648d1e805cc22135de3b1db79640645`
+1. Start the process using _git bisect start_
+1. Specify a known bad commit. I'm going to say that my currently checked out commit is _bad_ using _git bisect bad_
+1. Specify a known good commit.  From my list above I'm going to say that the good commit was some time ago using _git bisect good 211cd00af648d1e805cc22135de3b1db79640645_
 
 Now the process is running.  In the terminal I get this output, telling me what git bisect is doing for me.  Note, it actually checks out the commit so you can test it out to determine if it's good or bad.
 ```
@@ -72,13 +72,13 @@ Bisecting: 11 revisions left to test after this (roughly 4 steps)
 [e0aec5ded852ce9a09f40e0a60f7beb6cffe81d0] Add current navigation style
 ```
 
-Now looking at our list of commits above, we see it chose a commit right in the middle, which in the Results section below I labeled _(bisect 1)_.  This is still a bad commit, so I'm going to say `git bisect bad`.
+Now looking at our list of commits above, we see it chose a commit right in the middle, which in the Results section below I labeled _(bisect 1)_.  This is still a bad commit, so I'm going to say _git bisect bad_, and the terminal shows me this.
 ```
 Bisecting: 5 revisions left to test after this (roughly 3 steps)
 [261a23286ab2d275f8f12a724e32caa244c26478] Merge pull request #5 from Loganras/jekyll-tags-post
 ```
 
-It now checked out a new commit for me to test... I will continue labelling and marking the commits as good or bad with `git bisect good` or `git bisect bad` and save you the reading of all the output ;).
+It now checked out another new commit for me to test... I will continue labelling and marking the commits as good or bad with _git bisect good_ or _git bisect bad_ and save you the reading of all the output ;).
 
 ## Results
 
