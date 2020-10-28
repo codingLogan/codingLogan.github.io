@@ -58,7 +58,7 @@ Congratulations! You now know at least one more tool to make your life ~~a littl
 
 My good friend Ethan, [@_estewart on Twitter](https://twitter.com/_estewart), is the one who introduced me to the concept of the bookmarklet.  He's given me permission to share some of them, which may give you some more ideas of what you can create.  In these examples the commented and minified line of code is what would actually be placed in the URL textbox.
 
-An example wich toggles designMode
+An example which toggles designMode
 ```js
 document.designMode = document.designMode === `off` ? `on` : `off`
 // javascript:document.designMode=`off`===document.designMode?`on`:`off`
