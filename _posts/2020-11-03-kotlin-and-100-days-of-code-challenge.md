@@ -1,5 +1,5 @@
 ---
-tags: 100DaysOfCode, kotlin
+tags: [100DaysOfCode, kotlin]
 ---
 
 So, what is Kotlin, and why is it worth learning?
