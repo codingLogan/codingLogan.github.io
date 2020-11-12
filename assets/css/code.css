@@ -2,7 +2,7 @@
     width: inherit;
     overflow-x: auto;
     background-color: black;
-    padding: 4px;
+    padding: 1em;
 }
 
 .highlight pre { background-color: black; }
