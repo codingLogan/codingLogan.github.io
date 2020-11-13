@@ -6,8 +6,25 @@
     font-family: "Arial";
     max-width: 45%;
 
+    h1 {
+        margin-bottom: 0;
+    }
+
+    & > .subtitle {
+        font-size: 0.95em;
+        margin-top: 0.25em;
+    }
+
+    & > p:not(.subtitle) {
+        font-size: 0.85em;
+    }
+
     & > #slogan {
         margin-top: 2.5em;
+    }
+
+    em {
+        color: var(--text-color);
     }
 }
 
