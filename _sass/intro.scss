@@ -33,6 +33,10 @@
     em {
         color: var(--text-color);
     }
+
+    & .action-call {
+        margin:1px;
+    }
 }
 
 #myname {
