@@ -1,16 +1,39 @@
 .blog--list {
     list-style: none;
-    padding: 0
-}
+    padding: 0;
 
-.blog--title {
-    margin-bottom: 0.3em;
+    & > li {
+        background-color: var(--text-color);
+        border-radius: 8px;
+        color: var(--background-color);
+        padding: 0.5em;
+
+        margin-bottom: .5em;
+
+        & > a {
+            display: inline-block;
+        }
+
+        & > a > .blog--title {
+            margin-bottom: 0;
+            margin-top:0;
+            color: var(--link-color)
+        }
+        
+        & > a > .blog--date {
+            font-size: 0.95em;
+            color: var(--link-color)
+        }
+        & > a > .blog--excerpt {
+            color:var(--background-color)
+        }
+    }
 }
 
 .blog--date {
     margin-top: 0;
     margin-bottom: 0.8em;
-    color: var(--text-color);
+    font-style: italic;
 }
 
 a.post--tag {
@@ -19,4 +42,8 @@ a.post--tag {
     padding: 4px 12px;
     border-top-left-radius: 16px;
     border-bottom-left-radius: 16px;
+}
+
+.card {
+    color: var(--background-color)
 }

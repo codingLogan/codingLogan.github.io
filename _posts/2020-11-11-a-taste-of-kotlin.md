@@ -2,7 +2,10 @@
 tags: [100DaysOfCode, kotlin]
 ---
 
-Let's explore the basics of a Kotlin application, and just a few of the crucial pieces of the language.  I will cover:
+Let's explore the basics of a Kotlin application, and just a few of the crucial pieces of the language.
+
+&nbsp;
+## Contents
 - [How to get started](#how-to-get-started)
 - [Kotlin entry point](#kotlin-entry-point)
 - [Variable types](#variable-types)
