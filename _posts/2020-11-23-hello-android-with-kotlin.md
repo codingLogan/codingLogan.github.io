@@ -90,7 +90,6 @@ Now that we know the elements we need, we'll need to research and fill in all th
 Here's what it looks like all filled out, some was boilerplate, some was manual injection by me, but it's important to see the structure is what I thought up before even _thinking in Android's terms_.
 
 ```xml
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
