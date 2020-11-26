@@ -1,3 +1,7 @@
+---
+tags: [100DaysOfCode, kotlin, android]
+---
+
 Learning Android is a lot less intimidating when you are introduced to the basics.  Here are the basics I was taught recently by following a free Udacity tutorial to build a dice roller app.
 
 ## Sections
