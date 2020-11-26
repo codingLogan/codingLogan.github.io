@@ -37,7 +37,7 @@ _It's good to understand the magic going on so you can really own your project_
 In the left side of the IDE you'll see the files of your new project.  You'll also notice at the top area above the files, it has a dropdown to select _different views_ of the project's files.
 - _Project_: Shows the files as they are in the filesystem. (This view is good to know about, but less useful in my short time with it)
 - _Android_: Shows a friendly view of the various folders which house different content. Note - it's NOT the actual folder structure of the files on disk, it's just organized in this way to be useful for developers.
-- (others I've not exlored yet)
+- (others I've not explored yet)
 
 Moving forward in my Android experience I will be using the Android view as it seems to be the easiest to work with, until I find some reason not to.
 
@@ -108,9 +108,9 @@ Here's what it looks like all filled out, some was boilerplate, some was manual 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        app:srcCompat="@drawable/dice_1"
-        tools:src="@drawable/dice_6"
-        android:id="@+id/dice_image"/>
+        app:src="@drawable/your_image"
+        tools:src="@drawable/your_design_image"
+        android:id="@+id/action_image"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -129,7 +129,7 @@ I feel it might be worth going over some of the android attributes, because when
 First, the _root element_ of a layout can specify what namespaces are used with the _xmlns_ attributes. I'm not going to claim I know a lot about these, but here's what I'm using in the LinearLayout (root) element so I can use the attributes from those namespaces.
 - xmlns:android="http://schemas.android.com/apk/res/android" provides android attributes
 - xmlns:tools="http://schemas.android.com/tools" provides build time tools, and the usages of it are removed from elements during build time of your app.
-- xmlns:app="http://schemas.android.com/apk/res-auto" in my usage provides backwards compatiblity for the ImageView to draw vector graphics.  I followed the tutorial on this one, and definitely need to research to understand this more.
+- xmlns:app="http://schemas.android.com/apk/res-auto" in my usage provides backwards compatibility for the ImageView to draw vector graphics.  I followed the tutorial on this one, and definitely need to research to understand this more.
 
 android attributes
 - layout_width: the width of your element
@@ -173,7 +173,7 @@ I want to go over the two resources I used, images, and strings.  The larger you
 Images that you want to use in your app go in the _drawable_ folder.  Simply copy your images into the _res/drawable_ folder and then you can reference the image in your layout xml files.
 
 ```xml
-<ImageView android:src="@drawable/yourimage" />
+<ImageView android:src="@drawable/your_image" />
 ```
 
 #### String Resource (located at app/res/values/strings.xml)
