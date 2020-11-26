@@ -78,19 +78,22 @@ Now that we know what we want, we just need to search in the docs for what can g
 - _ImageView_ shows an image
 - _Button_ is an Android button for interactions
 
-```xml
+```
+{% raw %}
 <LinearLayout>
     <TextView/>
     <ImageView/>
     <Button/>
 </LinearLayout>
+{% endraw %}
 ```
 
 Now that we know the elements we need, we'll need to research and fill in all the Android details, (or just follow a tutorial that teaches them to you 👍)
 
 Here's what it looks like all filled out, some was boilerplate, some was manual injection by me, but it's important to see the structure is what I thought up before even _thinking in Android's terms_.
 
-```xml
+```
+{% raw %}
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -124,6 +127,7 @@ Here's what it looks like all filled out, some was boilerplate, some was manual 
         android:id="@+id/roll_button"/>
 
 </LinearLayout>
+{% endraw %}
 ```
 
 Very concise recap...  We have a ViewGroup LinearLayout element, holding the other elements that give us the layout we thought up, now with Android details.
