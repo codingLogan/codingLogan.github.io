@@ -77,6 +77,7 @@ Now that we know what we want, we just need to search in the docs for what can g
 - _TextView_ shows text
 - _ImageView_ shows an image
 - _Button_ is an Android button for interactions
+
 ```xml
 <LinearLayout>
     <TextView/>
