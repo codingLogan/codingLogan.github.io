@@ -5,14 +5,14 @@ tags: [javascript]
 This will be a pretty brief post, showing how you can quickly set up an Express app that can also be deployed to Heroku with minimal effort.
 
 # Summary (you're welcome)
-1. Create a folder for your project and run `git init` inside it
-1. Run `npx express-generator` to create a basic Express app
-1. Run `npm install`
+1. Create a folder for your project and run _git init_ inside it
+1. Run _npx express-generator_ to create a basic Express app
+1. Run _npm install_
 1. ignore _node_modules_
-1. Run `npx create-react-app client` to create a React client
+1. Run _npx create-react-app client_ to create a React client
 1. Modify Express to serve React's static files
-1. Create a root level package.json script to build client files, and run `npm run build`
-1. Run your entire app with `npm start`.
+1. Create a root level package.json script to build client files, and run _npm run build_
+1. Run your entire app with _npm start_.
 
 In the end you will have a repository that is holding both your front end application AND your back-end server code.  It makes for really easy deploys of your code because it's all in one place.  This is how it will look at the top level when we're done.
 ```
@@ -67,11 +67,11 @@ app.js
 package.json
 ```
 
-Now... this automated generation added the proper dependencies for your express app to package.json, but did not install them via npm.  Install them now by running `npm install`
+Now... this automated generation added the proper dependencies for your express app to package.json, but did not install them via npm.  Install them now by running _npm install_
 
 ## Sanity check, make sure it runs
 
-Run `npm start` to start up your new express server
+Run _npm start_ to start up your new express server
 
 Go to [http://localhost:3000/](http://localhost:3000/) and check to see if you get a friendly "Welcome to Express" message.  If you do, you're good to go!
 
@@ -143,7 +143,7 @@ To validate everything is working run _npm start_ and you will see React instead
 
 ## Notes on Heroku deployment
 
-The additional scripts we added earlier will allow Heroku to `build` and `start` your server thats holding your React files.  It looks for those two scripts when you deploy a Node project.
+The additional scripts we added earlier will allow Heroku to _build_ and _start_ your server thats holding your React files.  It looks for those two scripts when you deploy a Node project.
 
 A few more configs
 - To deploy to Heroku, they also want you to specify the Node version in your package.json, so lets add that.
