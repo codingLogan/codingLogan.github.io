@@ -2,7 +2,7 @@
 tags: [css]
 ---
 
-I explain a few gotchas that I ran into when developing a parallax effective for a work project.  Css background, and a Firefox specific issue I ran into.
+I explain a few gotchas that I ran into when developing a parallax effect for a work project.  Css background, and a Firefox specific issue I ran into.
 
 ## Summary
 
