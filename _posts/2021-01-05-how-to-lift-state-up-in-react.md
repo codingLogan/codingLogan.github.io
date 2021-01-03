@@ -9,7 +9,9 @@ In React you will eventually find a need to share state between components.  Her
 Here are the sections of this article
 
 [End Goal](#end-goal)
+
 [The Component Tree](#the-component-tree)
+
 [Lift State Up](#lift-state-up)
 
 ## End Goal
