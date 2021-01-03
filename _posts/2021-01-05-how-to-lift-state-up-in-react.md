@@ -52,7 +52,7 @@ Pressing down
 
 ```
 first menu item
-second menu item <--
+second menu item <-- active
 ```
 
 Ok, looking at the two components we want to interact, we have these two specific things we want to happen, but they aren't hook up to work together yet.
@@ -74,7 +74,7 @@ _navItems_: Object containing the list of items you can navigate through, and th
 _downHandler function_: This function will be called by Controls to signify the "down action" has taken place.  The _items state_ will be used in the function to determine what the effect of that action should be.
 
 Code snippet for Parent
-```
+```js
 const [items, setItems] = useState({ activeIndex: null, items: [] });
 
 const downHandler = function () {
@@ -88,7 +88,7 @@ const downHandler = function () {
 ```
 
 Parent markup snippet
-```
+```js
 <Controls
     downHandler={downHandler}
 />
@@ -100,7 +100,7 @@ Notice, we are not actually setting the items to anything but an empty array.  I
 
 Use the handler function (which should be passed as a prop) from Parent in your markup.  This will make Controls call the function that is defined Parent.
 
-```
+```js
 function Controls({downHandler}) {
     return (
         <button onClick={downHandler}>Down</button>
@@ -116,7 +116,7 @@ Ok then, Screen needs to set the items that are available, while also accepting 
 
 Here's a snippet of the setup for Screen
 
-```
+```js
 function ScreenContent({ navItems, setNavItems }) {
 
     // Define the items that should appear on the screen
