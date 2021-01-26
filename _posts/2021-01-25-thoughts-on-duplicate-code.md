@@ -57,13 +57,13 @@ function disableButtons(ids) {
         // Other duplicate logic
     })
 }
-
 disableButtons([
     'bigButton',
     'medButton',
     'smallButton'
 ])
 ```
+
 - You could use querySelectorAll to get a list of Nodes you can iterate through to disable.
 - etc.
 
@@ -84,7 +84,7 @@ function disableButton(id) {
 }
 ```
 
-Having two functions like this will just be confusing for a developer to maintain.  If I encounter this function I have multiple questions going through my mind
+Having two functions like this will just be confusing for a developer to maintain.  If I encounter this situation I have multiple questions going through my mind
 - Which one is most current?
 - Which one should I use?
 - Are both of these used?
@@ -112,7 +112,7 @@ function disableButton(id) {
 
 With this strategy, you can take an incremental approach to removing the usage of the old function.  If it's simple enough you could just remove the one and keep the other without the deprecation and function wrapping, but sometimes the scope of your task just doesn't allow you to do it all at once.  Or, the usage of the function is a public API so just removing it would be dangerous for your users.
 
-You'll need to take care to test all areas as you deprecate it's usage, and then plan to chop the function out of your code in a future versin when all code has been moved to the direct usage of the _chosen one_.
+You'll need to take care to test all areas as you deprecate it's usage, and then plan to chop the function out of your code in a future version when all code has been moved to the direct usage of the _chosen one_.
 
 &nbsp;
 ## Duplicate Modules
