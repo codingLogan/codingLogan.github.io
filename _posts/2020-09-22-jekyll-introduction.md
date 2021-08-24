@@ -45,7 +45,7 @@ With your repository open in a browser
 ## Congratulations!  Pages Is Serving Your New Website
 Once the _Settings_ page refreshes after saving, scroll back down to the GitHub Pages section.  Above the area where you made your selections of a branch and folder it will say something similar to this (but your repo instead):
 
-Your site is ready to be published at https://loganras.github.io/jekyll-intro/.
+Your site is ready to be published at https://codingLogan.github.io/jekyll-intro/.
 
 If you click on that link, you will be taken to your GitHub Pages website, which is currently serving your README file as your landing page.
 

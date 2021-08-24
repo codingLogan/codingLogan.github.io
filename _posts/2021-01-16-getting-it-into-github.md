@@ -19,7 +19,7 @@ Now GitHub has a git repository ready for you to start working in, you just have
 - Address Bar of Browser: use the URL of the page, and add _.git_ to the end
 - Look for a _Green Code Button_ (at the time of writing): clicking on it should reveal your repository address, with _.git_ already added to the end of the URL, copy that to your clipboard.
 
-The address you find will look something like _https://github.com/Loganras/temp-test.git_  Using that address, you can now _git clone_ your repository to your local machine.
+The address you find will look something like _https://github.com/codingLogan/temp-test.git_  Using that address, you can now _git clone_ your repository to your local machine.
 
 1. Open a terminal and navigate to a folder that you'd like your project to exist in.
 1. Run the following git clone command
@@ -29,7 +29,7 @@ git clone <address-of-git-repository>
 
 For me it would look like this
 ```
-git clone https://github.com/Loganras/temp-test.git
+git clone https://github.com/codingLogan/temp-test.git
 ```
 1. You should now have a folder named the same as your repository.
 

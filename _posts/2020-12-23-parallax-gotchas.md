@@ -18,7 +18,7 @@ Css Backgrounds should be applied to the parent that sets the perspective, other
 }
 ```
 
-You can actually view the parallax examples in this post on GitHub at my [pokemon-parallax](https://github.com/Loganras/pokemon-parallax) repository.  Look at the README and you can follow links to see those examples.
+You can actually view the parallax examples in this post on GitHub at my [pokemon-parallax](https://github.com/codingLogan/pokemon-parallax) repository.  Look at the README and you can follow links to see those examples.
 
 Firefox tip - If you are nesting parallax effects deeply for whatever reason, you MUST apply a _transform-style: preserve-3d;_ to every div that contains parallax elements or you'll lose your 3d perspective.  Chrome and Safari did not have this issue...
 

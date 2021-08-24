@@ -75,7 +75,7 @@ Bisecting: 11 revisions left to test after this (roughly 4 steps)
 Now looking at our list of commits above, we see it chose a commit right in the middle, which in the Results section below I labeled _(bisect 1)_.  This is still a bad commit, so I'm going to say _git bisect bad_, and the terminal shows me this.
 ```
 Bisecting: 5 revisions left to test after this (roughly 3 steps)
-[261a23286ab2d275f8f12a724e32caa244c26478] Merge pull request #5 from Loganras/jekyll-tags-post
+[261a23286ab2d275f8f12a724e32caa244c26478] Merge pull request #5 from codingLogan/jekyll-tags-post
 ```
 
 It now checked out another new commit for me to test... I will continue labelling and marking the commits as good or bad with _git bisect good_ or _git bisect bad_ and save you the reading of all the output ;).

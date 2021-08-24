@@ -94,7 +94,7 @@ git status
 
 If I use git status right now for this post I have in progress, I get this output showing that I have a modified file, and it gives instructions for how to stage or commit them.
 ```
-loganras.github.io$ git status
+codingLogan.github.io$ git status
 On branch git-basics
 Your branch is up to date with 'origin/git-basics'.
 

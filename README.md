@@ -1,4 +1,4 @@
-# loganras.github.io
+# codingLogan.github.io
 This site's main goal is to share content with the development community, and to showcase the highlights I've had the privilege of being involved with.
 
 ## Contributions welcome
