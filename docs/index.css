@@ -1,0 +1,226 @@
+:root {
+  --nav-background: rgb(20, 21, 22);
+  --background-color: rgb(20, 21, 22);
+  --text-color: rgb(207, 205, 180);
+  --background-alternate-color: rgb(1, 36, 54);
+
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 32px;
+  --space-xl: 64px;
+}
+
+@font-face {
+  font-family: "SNES";
+  src: url("fonts/SnesItalic-1G9Be.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: sans-serif;
+  line-height: 1.5em;
+}
+
+nav {
+  background-color: var(--nav-background);
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* The first child is an img with 60px height */
+nav ul li:first-child {
+  height: 60px;
+  margin-right: 0;
+}
+
+.nav-item,
+nav ul li {
+  margin-right: var(--space-md);
+  font-family: SNES;
+  font-size: 1.75em;
+}
+
+/* Nav image is expected to be square */
+.nav-left-img {
+  height: 60px;
+  clip-path: polygon(0 0, 100% 0, 71% 100%, 0 100%);
+}
+
+.nav-item .active,
+nav ul li .active {
+  border-bottom: 2px solid var(--text-color);
+}
+
+.nav-link,
+.nav-item a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-item a:hover {
+  text-decoration: underline;
+}
+
+section:nth-child(odd) {
+  background-color: var(--background-alternate-color);
+  background: linear-gradient(
+    var(--background-alternate-color),
+    var(--background-alternate-color) 90%,
+    var(--background-color) 100%
+  );
+}
+
+section:nth-child(2n + 4) {
+  background: linear-gradient(
+    var(--background-color),
+    var(--background-color) 90%,
+    var(--background-alternate-color) 100%
+  );
+}
+
+section {
+  position: relative;
+}
+
+video {
+  width: 100%;
+}
+
+/* General classes */
+.content {
+  margin: auto;
+  padding: var(--space-md);
+  padding-top: var(--space-lg);
+  padding-bottom: var(--space-xl);
+  max-width: 750px;
+}
+
+.heading {
+  margin-bottom: var(--space-xl);
+}
+
+/* Hero Declaration Section */
+.hero {
+  background-color: black;
+}
+
+.hero-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero-helloText {
+  position: absolute;
+  left: 16px;
+  top: 100px;
+  max-width: 75px;
+  line-height: 1.25em;
+}
+
+/* This makes the paragraph appear in correct layer order */
+#hero-paragraph p {
+  position: relative;
+}
+
+/* Creates the gradient to blend into the other section */
+.hero-mask {
+  position: relative;
+}
+.hero-mask::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 80%,
+    rgba(0, 0, 0, 0.3) 93%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+@media screen and (max-width: 749px) and (orientation: landscape) {
+  .hero-image {
+    width: unset;
+  }
+}
+
+@media (min-width: 750px) or (orientation: landscape) {
+  .hero {
+    display: flex;
+  }
+
+  .hero-image {
+    max-height: 100vh;
+    object-fit: contain;
+    object-position: top;
+  }
+
+  /* Changes direction and definition of the gradient */
+  .hero-mask::before {
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0) 80%,
+      rgba(0, 0, 0, 0.3) 93%,
+      rgba(0, 0, 0, 1) 100%
+    );
+  }
+
+  .hero-helloText {
+    position: relative;
+    left: 0;
+    top: 0;
+    max-width: 100%;
+    font-size: 1.5em;
+  }
+}
+/* End Hero Declaration */
+
+/* Describe how to make content-image flip flop */
+.flipFlop {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: var(--space-xl);
+}
+
+.flipFlop-image {
+  width: 100%;
+  object-fit: contain;
+}
+
+@media (min-width: 750px) or (orientation: landscape) {
+  .flipFlop {
+    flex-direction: row;
+  }
+
+  .flipFlop:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+
+  .flipFlop-image {
+    width: 40%;
+  }
+}
+/* End flipFlop */
+
+/* Footer styles */
+footer ul,
+footer ol {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  justify-content: center;
+  font-size: 0.8em;
+  background-color: var(--nav-background);
+}
