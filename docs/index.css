@@ -223,4 +223,10 @@ footer ol {
   justify-content: center;
   font-size: 0.8em;
   background-color: var(--nav-background);
+  padding-left: 0px;
+}
+
+.squareList {
+  padding-left: 0.8em;
+  list-style: square;
 }
