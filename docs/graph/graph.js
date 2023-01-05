@@ -105,6 +105,7 @@ function resizeCanvas(canvas) {
  * Assumes canvas size is properly set
  */
 function drawGraph(canvas) {
+  const axisColor = 'rgb(207, 205, 180)'
   /* Determine sections of the graph, helpful for drawing calculations
     - Grid Area
     - Label gutters
@@ -132,6 +133,63 @@ function drawGraph(canvas) {
 
   // BEGIN DRAWING =====================================================
   const ctx = canvas.getContext('2d')
+
+  // Draw The X and Y axis lines
+  ctx.lineWidth = 4
+  ctx.strokeStyle = axisColor
+  ctx.beginPath()
+  ctx.moveTo(gridRectangle.left, 0)
+  ctx.lineTo(gridRectangle.left, gridRectangle.bottom)
+  ctx.lineTo(gridRectangle.right, gridRectangle.bottom)
+  ctx.stroke() // Actually draws axis lines
+
+  // Draw the tick marks for the x axis
+  const tickSize = 8
+
+  // Draw X axis ticks (left to right)
+  for (let i = 0; i <= maxYear - minYear; i++) {
+    ctx.strokeStyle = axisColor
+    ctx.beginPath()
+    ctx.moveTo(gridRectangle.left + xScale * i, gridRectangle.bottom)
+    ctx.lineTo(gridRectangle.left + xScale * i, gridRectangle.bottom + tickSize)
+    ctx.stroke()
+
+    // Text labels
+    ctx.font = '12px serif'
+    ctx.fillStyle = axisColor
+    ctx.fillText(
+      minYear + i,
+      gridRectangle.left + xScale * i - 24, // 24 bumps text left
+      gridRectangle.bottom + tickSize * 3
+    )
+  }
+
+  // Draw Y axis ticks (bottom to top)
+  for (let i = 0; i <= maxY; i++) {
+    // Draw a vertical reference line
+    ctx.lineWidth = 1
+    ctx.strokeStyle = 'darkgray'
+    ctx.beginPath()
+    ctx.moveTo(gridRectangle.left, gridRectangle.bottom - yScale * i)
+    ctx.lineTo(gridRectangle.right, gridRectangle.bottom - yScale * i)
+    ctx.stroke()
+
+    ctx.lineWidth = 4
+    ctx.strokeStyle = axisColor
+    ctx.beginPath()
+    ctx.moveTo(gridRectangle.left, gridRectangle.bottom - yScale * i)
+    ctx.lineTo(gridRectangle.left - tickSize, gridRectangle.bottom - yScale * i)
+    ctx.stroke()
+
+    // Text labels
+    ctx.font = '12px serif'
+    ctx.fillStyle = axisColor
+    ctx.fillText(
+      i,
+      gridRectangle.left - tickSize - 16, // 16 adjust the text position slightly
+      gridRectangle.bottom - yScale * i + 4 // 4 helps align text vertically with tick mark
+    )
+  }
 
   // Draw lines
   const lineWidths = {
@@ -161,54 +219,8 @@ function drawGraph(canvas) {
         )
       }
     }
+    ctx.lineCap = 'round'
     ctx.stroke()
-  }
-
-  // Draw The X and Y axis lines
-  ctx.lineWidth = 4
-  ctx.strokeStyle = 'white'
-  ctx.beginPath()
-  ctx.moveTo(gridRectangle.left, 0)
-  ctx.lineTo(gridRectangle.left, gridRectangle.bottom)
-  ctx.lineTo(gridRectangle.right, gridRectangle.bottom)
-  ctx.stroke() // Actually draws axis lines
-
-  // Draw the tick marks for the x axis
-  const tickSize = 8
-
-  // Draw X axis (left to right)
-  for (let i = 0; i <= maxYear - minYear; i++) {
-    ctx.strokeStyle = 'white'
-    ctx.beginPath()
-    ctx.moveTo(gridRectangle.left + xScale * i, gridRectangle.bottom)
-    ctx.lineTo(gridRectangle.left + xScale * i, gridRectangle.bottom + tickSize)
-    ctx.stroke()
-
-    // Text labels
-    ctx.font = '12px serif'
-    ctx.fillStyle = 'white'
-    ctx.fillText(
-      minYear + i,
-      gridRectangle.left + xScale * i - 24, // 24 bumps text left
-      gridRectangle.bottom + tickSize * 3
-    )
-  }
-
-  // Draw Y axis (bottom to top)
-  for (let i = 0; i <= maxY; i++) {
-    ctx.beginPath()
-    ctx.moveTo(gridRectangle.left, gridRectangle.bottom - yScale * i)
-    ctx.lineTo(gridRectangle.left - tickSize, gridRectangle.bottom - yScale * i)
-    ctx.stroke()
-
-    // Text labels
-    ctx.font = '12px serif'
-    ctx.fillStyle = 'white'
-    ctx.fillText(
-      i,
-      gridRectangle.left - tickSize - 16, // 16 adjust the text position slightly
-      gridRectangle.bottom - yScale * i + 4 // 4 helps align text vertically with tick mark
-    )
   }
 
   // Draw the Key for each line
@@ -219,7 +231,7 @@ function drawGraph(canvas) {
     ctx.fillStyle = data[i].color
     ctx.fillRect(colorKeyLeft, legendTop - 14 + i * 20, 16, 16)
     ctx.font = '20px serif'
-    ctx.fillStyle = 'white'
+    ctx.fillStyle = axisColor
     ctx.fillText(data[i].label, legendLeft, legendTop + i * 20)
   }
 }
