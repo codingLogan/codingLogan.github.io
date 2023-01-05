@@ -11,8 +11,8 @@
 }
 
 @font-face {
-  font-family: "SNES";
-  src: url("fonts/SnesItalic-1G9Be.ttf") format("truetype");
+  font-family: 'SNES';
+  src: url('fonts/SnesItalic-1G9Be.ttf') format('truetype');
 }
 
 body {
@@ -137,7 +137,7 @@ video {
   position: relative;
 }
 .hero-mask::before {
-  content: "";
+  content: '';
   width: 100%;
   height: 100%;
   position: absolute;
@@ -229,4 +229,8 @@ footer ol {
 .squareList {
   padding-left: 0.8em;
   list-style: square;
+}
+
+#experience-chart {
+  margin-top: var(--space-lg);
 }
