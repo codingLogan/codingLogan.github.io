@@ -71,6 +71,10 @@ nav ul li .active {
   text-decoration: underline;
 }
 
+p a {
+  color: orange;
+}
+
 section:nth-child(odd) {
   background-color: var(--background-alternate-color);
   background: linear-gradient(
